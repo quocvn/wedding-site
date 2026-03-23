@@ -33,7 +33,890 @@
     <link rel="shortcut icon" type="image/svg+xml" href="/icons/logo.svg" />
     <link rel="apple-touch-icon" href="/icons/logo.svg" />
     <link rel="apple-touch-icon-precomposed" href="/icons/logo.svg" />
-  <body>
-    <div>Wedding Site!</div>
+    <link rel="stylesheet" href="./css/libs.css" type="text/css" />
+    <link rel="stylesheet" href="./css/lightgallery.css" type="text/css" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./css/plugin.css" type="text/css" />
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script type="text/javascript">
+    var photoGalleries = [];
+    var dataWishes = [];
+  </script>
+  <body data-spy="scroll" data-target=".navbar-fixed-top" class="home-3">
+    <div class="preloader-area">
+      <div class="loader loader-13">
+        <div class="css-heart heart1"></div>
+        <div class="css-heart heart2"></div>
+        <div class="css-heart heart3"></div>
+        <div class="css-heart heart4"></div>
+      </div>
+    </div>
+    <header id="inner-navigation">
+      <nav
+        class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow"
+      >
+        <div class="container">
+          <div class="logo">
+            <a href="/"
+              ><h1 style="font-size: 25px">
+                Q<span class="main-color"
+                  ><i
+                    class="fa fa-heart"
+                    style="margin: 10px; color: red"
+                  ></i></span
+                >H
+              </h1></a
+            >
+            <a href="/" class="sticky-logo"
+              ><h1 style="font-size: 25px">
+                Q<span class="main-color"
+                  ><i
+                    class="fa fa-heart"
+                    style="margin: 10px; color: red"
+                  ></i></span
+                >H
+              </h1></a
+            >
+          </div>
+          <div id="navbar" class="navbar-nav-wrapper pull-right">
+            <ul class="nav navbar-nav navbar-right" id="responsive-menu">
+              <li class="active">
+                <a href="#wd-banner">Home</a>
+              </li>
+
+              <li class="active">
+                <a href="#about-us">Cặp đôi</a>
+              </li>
+              <li class="active">
+                <a href="#our-story">Chuyện tình yêu</a>
+              </li>
+
+              <li class="active">
+                <a href="#wedding-event">Sự kiện cưới</a>
+              </li>
+
+              <li class="active">
+                <a href="#the-gallery">Album Hình Cưới</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div id="slicknav-mobile"></div> -->
+      </nav>
+    </header>
+
+    <section id="wd-banner" class="hero-slider hero-style-1">
+      <div class="banner_caption_text wow fadeInDown">
+        <div class="heart-arrow">
+          <span><i class="fa fa-heart"></i></span>
+        </div>
+        <div class="heart-arrow1">
+          <span><i class="fa fa-heart"></i></span>
+        </div>
+        <div class="heart-arrow2">
+          <span><i class="fa fa-heart"></i></span>
+        </div>
+        <h3>We’re Getting Married!</h3>
+        <h2><span>Quốc</span> &amp; <span>Hoa</span></h2>
+        <div class="text-date">
+          <p>SAVE THE DATE<span>27-04-2026</span></p>
+          <i class="fa fa-heart"></i>
+        </div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image"
+              data-background="./images/slide-ex.webp"
+            ></div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="slide-inner slide-bg-image"
+              data-background="./images/slide-ex.webp"
+            ></div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="next-prev-btn">
+          <div
+            class="swiper-button-next"
+            style="transform: rotateZ(-90deg)"
+          ></div>
+          <div
+            class="swiper-button-prev"
+            style="transform: rotateZ(90deg)"
+          ></div>
+        </div>
+      </div>
+
+      <div class="seperator">
+        <img src="./images/bg-layer.png" alt="seperator" />
+      </div>
+    </section>
+
+    <section id="about-us" class="section-padding" style="height: 100%">
+      <div class="container">
+        <div class="section-title wow fadeInDown">
+          <h2>Cặp đôi</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="the-couple wow fadeInLeft groom">
+              <div class="couple-img">
+                <img src="./images//groom.png" alt="" />
+                <h4>Chú Rể</h4>
+              </div>
+
+              <div class="about-couple about-couple-1">
+                <div class="about-top">
+                  <h3>Nguyễn Văn Quốc</h3>
+                </div>
+
+                <div class="cp-detail">
+                  <div class="parent-infos ar">
+                    <div class="parent-info">
+                      <span class="parent-title">Con ông:</span>
+                      <span class="parent-name">Nguyễn Văn Nhiều</span>
+                    </div>
+
+                    <div class="parent-info">
+                      <span class="parent-title">Con bà:</span>
+                      <span class="parent-name">Lương Thị Út</span>
+                    </div>
+                  </div>
+                  <p class="ar">
+                    Chú rể là một IT đến từ Sóc Trăng – vùng đất “Sóc sờ bai”
+                    nổi tiếng với sự chân thành và ấm áp. Trong công việc...
+                    <a
+                      class="button-see"
+                      tabindex="0"
+                      data-trigger="focus"
+                      role="button"
+                      data-toggle="popover"
+                      data-placement="bottom"
+                      data-content="Trong công việc anh quen với việc viết code, sửa bug và tối ưu hệ thống. Còn trong tình yêu, anh chỉ có một “project” duy nhất – đó là xây dựng một cuộc sống hạnh phúc trọn đời cùng cô dâu. Và may mắn thay, “dự án” này đã được deploy thành công!"
+                      style="font-size: 14px; cursor: pointer"
+                      >Xem thêm<i class="bi bi-arrow-down-short"></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="the-couple wow fadeInRight bride">
+              <div class="couple-img">
+                <img src="./images/bride.png" alt="" />
+                <h4>Cô Dâu</h4>
+              </div>
+              <div class="about-couple">
+                <div class="about-top">
+                  <h3>Trần Thị Hoa</h3>
+                </div>
+
+                <div class="cp-detail">
+                  <div class="parent-infos al">
+                    <div class="parent-info">
+                      <span class="parent-title">Con ông:</span>
+                      <span class="parent-name">Trần Văn Hòa</span>
+                    </div>
+
+                    <div class="parent-info">
+                      <span class="parent-title">Con bà:</span>
+                      <span class="parent-name">Khổng Thị Kha</span>
+                    </div>
+                  </div>
+                  <p class="al">
+                    Từ mảnh đất Hậu Giang yên bình, cô dâu trưởng thành với sự
+                    dịu dàng, chân thành và chu đáo. Là một thu ngân...
+                    <a
+                      class="button-see"
+                      tabindex="0"
+                      data-trigger="focus"
+                      role="button"
+                      data-toggle="popover"
+                      data-placement="bottom"
+                      data-content="Là một thu ngân, cô luôn cẩn thận, tỉ mỉ và chính xác trong từng chi tiết nhỏ. Nhưng khi đứng trước tình yêu, cô sẵn sàng “bỏ qua mọi phép tính” để lắng nghe trái tim mình – và chọn đúng người để đồng hành suốt cuộc đời."
+                      style="font-size: 14px; cursor: pointer"
+                      >Xem thêm<i class="bi bi-arrow-down-short"></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row wow fadeIn"></div>
+      </div>
+    </section>
+
+    <section id="our-story" class="story-bg section-padding">
+      <div class="container">
+        <div class="section-title wow fadeInDown">
+          <h2>Chuyện tình yêu</h2>
+        </div>
+        <div class="story-timeline">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-lt">
+                    <div class="image-story">
+                      <img src="./images/reply-story.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-rt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Bắt đầu từ những lần reply story</h3>
+                        <h6>December 01 2024</h6>
+                      </div>
+                      <p class="wow fadeInRight">
+                        Mọi chuyện bắt đầu từ những lần trả lời story tưởng
+                        chừng vu vơ trên Facebook. Từ vài dòng tin nhắn ngắn
+                        ngủi, cả hai dần tìm thấy sự đồng điệu trong suy nghĩ và
+                        cảm xúc. Không ồn ào, không vội vã, tình yêu đến nhẹ
+                        nhàng như một thói quen – mỗi ngày đều mong chờ một tin
+                        nhắn từ đối phương.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-lt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Lời tỏ tình dễ thương^^</h3>
+                        <h6>January 12 2025</h6>
+                      </div>
+                      <p class="wow fadeInLeft">
+                        Giữa không gian ấm cúng của Hương Lan Cafe, một lời tỏ
+                        tình đã được nói ra – đơn giản nhưng chân thành. Không
+                        cần những điều quá cầu kỳ, chỉ cần ánh mắt và sự rung
+                        động cũng đủ để chứng minh. Từ hôm đó, cả hai đã chính
+                        thức bước vào câu chuyện của nhau.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-rt">
+                    <div class="image-story">
+                      <img src="./images/huong-lan-coffee.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-lt">
+                    <div class="image-story">
+                      <img src="./images/eat-time-line.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-rt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Những ngày hẹn hò</h3>
+                        <h6>October 18 2025</h6>
+                      </div>
+                      <p class="wow fadeInRight">
+                        Từ Cần Thơ đến Ngã Bảy, mỗi chuyến đi là một lần tụi
+                        mình khám phá thêm một quán ngon, một góc nhỏ quen thuộc
+                        và cả những điều mới mẻ về nhau khiến hai nơi này đã trở
+                        thành ‘bản đồ tình yêu’ của tụi mình – từ những quán ăn
+                        quen thuộc đến rạp phim cuối tuần, mỗi nơi đều lưu lại
+                        một kỷ niệm thật ngọt ngào.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-lt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Ngày lễ đính hôn</h3>
+                        <h6>March 29 2026</h6>
+                      </div>
+                      <p class="wow fadeInLeft">
+                        Và rồi, ngày trọng đại cũng đến – Lễ Đính hôn. Giữa sự
+                        chứng kiến của gia đình và những người thân yêu, cả hai
+                        chính thức hứa hẹn sẽ cùng nhau đi tiếp chặng đường phía
+                        trước. Từ hai người xa lạ, tụi mình đã trở thành một
+                        phần không thể thiếu trong cuộc đời nhau – một hành
+                        trình mới chính thức bắt đầu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="story-lt-rt story-rt">
+                    <div class="image-story">
+                      <img src="./images/together.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="story-timeline story-time-mb">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-rt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Bắt đầu từ những lần reply story</h3>
+                        <h6>December 01 2024</h6>
+                      </div>
+                      <p class="wow fadeInRight">
+                        Mọi chuyện bắt đầu từ những lần trả lời story tưởng
+                        chừng vu vơ trên Facebook. Từ vài dòng tin nhắn ngắn
+                        ngủi, cả hai dần tìm thấy sự đồng điệu trong suy nghĩ và
+                        cảm xúc. Không ồn ào, không vội vã, tình yêu đến nhẹ
+                        nhàng như một thói quen – mỗi ngày đều mong chờ một tin
+                        nhắn từ đối phương.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-lt">
+                    <div class="image-story">
+                      <img src="./images/reply-story.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-lt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Lời tỏ tình dễ thương^^</h3>
+                        <h6>January 12 2025</h6>
+                      </div>
+                      <p class="wow fadeInLeft">
+                        Giữa không gian ấm cúng của Hương Lan Cafe, một lời tỏ
+                        tình đã được nói ra – đơn giản nhưng chân thành. Không
+                        cần những điều quá cầu kỳ, chỉ cần ánh mắt và sự rung
+                        động cũng đủ để chứng minh. Từ hôm đó, cả hai đã chính
+                        thức bước vào câu chuyện của nhau.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-rt">
+                    <div class="image-story">
+                      <img src="./images/huong-lan-coffee.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-rt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Những ngày hẹn hò</h3>
+                        <h6>October 18 2025</h6>
+                      </div>
+                      <p class="wow fadeInRight">
+                        Từ Cần Thơ đến Ngã Bảy, mỗi chuyến đi là một lần tụi
+                        mình khám phá thêm một quán ngon, một góc nhỏ quen thuộc
+                        và cả những điều mới mẻ về nhau khiến hai nơi này đã trở
+                        thành ‘bản đồ tình yêu’ của tụi mình – từ những quán ăn
+                        quen thuộc đến rạp phim cuối tuần, mỗi nơi đều lưu lại
+                        một kỷ niệm thật ngọt ngào.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-lt">
+                    <div class="image-story">
+                      <img src="./images/eat-time-line.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-lt">
+                    <div class="expand-story">
+                      <div class="story-head wow fadeIn">
+                        <h3>Ngày lễ đính hôn</h3>
+                        <h6>March 29 2026</h6>
+                      </div>
+                      <p class="wow fadeInLeft">
+                        Và rồi, ngày trọng đại cũng đến – Lễ Đính hôn. Giữa sự
+                        chứng kiến của gia đình và những người thân yêu, cả hai
+                        chính thức hứa hẹn sẽ cùng nhau đi tiếp chặng đường phía
+                        trước. Từ hai người xa lạ, tụi mình đã trở thành một
+                        phần không thể thiếu trong cuộc đời nhau – một hành
+                        trình mới chính thức bắt đầu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <div class="story-lt-rt story-rt">
+                    <div class="image-story">
+                      <img src="./images/together.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="the-countdown"
+      class="the-countdown layered-b section-padding"
+      style="
+        background-image: url(./images/slide-ex.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      "
+    >
+      <div class="seperator seperator-up">
+        <img src="./images/bg-layer-2.png" alt="seperator" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-xs-12">
+            <div class="count-titles wow fadeInDown">
+              <h2>The big day</h2>
+              <div
+                id="clock"
+                data-date="2026-04-27"
+                data-text-day="Ngày"
+                data-text-hour="Giờ"
+                data-text-minute="Phút"
+                data-text-second="Giây"
+              ></div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="count-img">
+              <i class="fa fa-clock-o"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="black-overlay-se"></div>
+      <div class="seperator">
+        <img src="./images/bg-layer-2.png" alt="seperator" />
+      </div>
+    </section>
+
+    <section id="wedding-event" class="wedding-event">
+      <div class="container">
+        <div class="section-title wow fadeInDown">
+          <h2>Sự Kiện Cưới</h2>
+        </div>
+        <div class="event-dates">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="banner-event">
+                <div class="event-img wow fadeInLeft sticky">
+                  <img
+                    src="./images/eat-drink-married.webp"
+                    alt="Eat, Drink and Be Married"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="event-stack wow fadeIn">
+                <h3 class="text-center">LỄ CƯỚI NHÀ NỮ</h3>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-5">
+                    <div class="image-wrap">
+                      <img
+                        class="event-image"
+                        src="./images/together.webp"
+                        alt="LỄ CƯỚI NHÀ NỮ"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-7">
+                    <div class="event-title text-center-sm">
+                      <ul>
+                        <li class="text-center">
+                          <i class="fa fa-calendar-check-o"></i>2026-04-26
+                        </li>
+                        <li class="text-center">
+                          <i class="fa fa-clock-o"></i> 08:00
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-center-sm">
+                      <i class="fa fa-map-marker"></i>
+                      <span>TƯ GIA NHÀ NỮ - </span>
+                      Ấp 5, xã Phụng Hiệp, TP. Cần Thơ
+                    </p>
+                    <a
+                      class="text-center-sm"
+                      href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667"
+                      target="_blank"
+                      >Xem bản đồ <i class="fa fa-caret-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="event-stack wow fadeIn">
+                <h3 class="text-center">TIỆC CƯỚI NHÀ NỮ</h3>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-5">
+                    <div class="image-wrap">
+                      <img
+                        class="event-image"
+                        src="./images/together.webp"
+                        alt="TIỆC CƯỚI NHÀ NỮ"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-7">
+                    <div class="event-title text-center-sm">
+                      <ul>
+                        <li class="text-center">
+                          <i class="fa fa-calendar-check-o"></i>2026-04-26
+                        </li>
+                        <li class="text-center">
+                          <i class="fa fa-clock-o"></i> 11:00
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-center-sm">
+                      <i class="fa fa-map-marker"></i>
+                      <span>TƯ GIA NHÀ NỮ - </span>
+                      Ấp 5, xã Phụng Hiệp, TP. Cần Thơ
+                    </p>
+                    <a
+                      class="text-center-sm"
+                      href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667"
+                      target="_blank"
+                      >Xem bản đồ <i class="fa fa-caret-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="event-stack wow fadeIn">
+                <h3 class="text-center">LỄ CƯỚI NHÀ NAM</h3>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-5">
+                    <div class="image-wrap">
+                      <img
+                        class="event-image"
+                        src="./images/together.webp"
+                        alt="LỄ CƯỚI NHÀ NAM"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-7">
+                    <div class="event-title text-center-sm">
+                      <ul>
+                        <li class="text-center">
+                          <i class="fa fa-calendar-check-o"></i>2026-04-27
+                        </li>
+                        <li class="text-center">
+                          <i class="fa fa-clock-o"></i> 09:00
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-center-sm">
+                      <i class="fa fa-map-marker"></i>
+                      <span>TƯ GIA NHÀ NAM - </span>
+                      Ấp Khu 2, xã Nhu Gia, TP. Cần Thơ
+                    </p>
+                    <a
+                      class="text-center-sm"
+                      href="https://www.google.com/maps/place/Ph%C6%B0%E1%BB%9Bc%20Ninh%2C%20H%E1%BA%A3i%20Ch%C3%A2u%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng"
+                      target="_blank"
+                      >Xem bản đồ <i class="fa fa-caret-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="event-stack wow fadeIn">
+                <h3 class="text-center">TIỆC CƯỚI NHÀ NAM</h3>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-5">
+                    <div class="image-wrap">
+                      <img
+                        class="event-image"
+                        src="./images/together.webp"
+                        alt="TIỆC CƯỚI NHÀ NAM"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-7">
+                    <div class="event-title text-center-sm">
+                      <ul>
+                        <li class="text-center">
+                          <i class="fa fa-calendar-check-o"></i>2026-04-27
+                        </li>
+                        <li class="text-center">
+                          <i class="fa fa-clock-o"></i> 11:00
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-center-sm">
+                      <i class="fa fa-map-marker"></i>
+                      <span>TƯ GIA NHÀ NAM - </span>
+                      Ấp Khu 2, xã Nhu Gia, TP. Cần Thơ
+                    </p>
+                    <a
+                      class="text-center-sm"
+                      href="https://www.google.com/maps/place/Da+Nang,+H%E1%BA%A3i+Ch%C3%A2u+District,+Da+Nang,+Vietnam/@16.0471659,108.1716864,13z/data=!3m1!4b1!4m5!3m4!1s0x314219c792252a13:0xfc14e3a044436487!8m2!3d16.0544068!4d108.2021667"
+                      target="_blank"
+                      >Xem bản đồ <i class="fa fa-caret-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="the-quote"
+      class="the-quote layered-b section-padding"
+      style="
+        background-image: url(./images/slide-ex.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      "
+    >
+      <div class="seperator seperator-up">
+        <img src="./images/bg-layer-2.png" alt="seperator" />
+      </div>
+      <div class="black-overlay-se"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="quote-img">
+              <img src="./images/love-quote.jpg" />
+            </div>
+          </div>
+          <div class="col-sm-8 col-xs-12">
+            <div class="quote-counter">
+              <div class="quote-titles wow fadeInDown">
+                <!-- https://hashtagcamtay.com/stt-dam-cuoi -->
+                <h2>Love Quote</h2>
+              </div>
+              <p>
+                “Tình yêu là đốm lửa của cuộc sống, là sự thăng hoa của tình
+                bạn, là sự hợp nhất của tâm hồn. Nếu nói cảm tình của nhân loại
+                có thể phân biệt đẳng cấp thì tình yêu luôn thuộc về một cấp cao
+                nhất.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="seperator">
+        <img src="./images/bg-layer-2.png" alt="seperator" />
+      </div>
+    </section>
+
+    <section id="the-gallery" class="gallery wide-gallery section-padding">
+      <div class="container">
+        <div class="section-title wow fadeInDown">
+          <h2>Album Hình Cưới</h2>
+        </div>
+        <div class="row masonry-gallery">
+          <script type="text/javascript">
+            photoGalleries.push({
+              src: "./images/together.webp",
+              thumb: "./images/together.webp",
+              subHtml: `<div class="lg-sub-html"><h4>Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn</h4></div>`,
+            });
+          </script>
+
+          <div
+            class="col-md-4 col-sm-6 col-xs-6 mix grid-item btn-see-more-gallery"
+            data-index="0"
+          >
+            <div class="item">
+              <a href="javscript:void(0)">
+                <img src="./images/together.webp" alt="" />
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </div>
+          <script type="text/javascript">
+            photoGalleries.push({
+              src: "./images/together.webp",
+              thumb: "./images/together.webp",
+              subHtml: `<div class="lg-sub-html"><h4>Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó là sự quan tâm, chia sẻ, giúp đỡ, hy sinh</h4></div>`,
+            });
+          </script>
+
+          <div
+            class="col-md-4 col-sm-6 col-xs-6 mix grid-item btn-see-more-gallery"
+            data-index="1"
+          >
+            <div class="item">
+              <a href="javscript:void(0)">
+                <img src="./images/together.webp" alt="" />
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </div>
+          <script type="text/javascript">
+            photoGalleries.push({
+              src: "./images/together.webp",
+              thumb: "./images/together.webp",
+              subHtml: `<div class="lg-sub-html"><h4>Vì vậy, để được ai đó nhìn thấy đầy đủ và được yêu mến dù thế nào đi nữa — đây là một sự dâng hiến của con người có thể là điều kỳ diệu</h4></div>`,
+            });
+          </script>
+
+          <div
+            class="col-md-4 col-sm-6 col-xs-6 mix grid-item btn-see-more-gallery"
+            data-index="2"
+          >
+            <div class="item">
+              <a href="javscript:void(0)">
+                <img src="./images/together.webp" alt="" />
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </div>
+          <script type="text/javascript">
+            photoGalleries.push({
+              src: "./images/together.webp",
+              thumb: "./images/together.webp",
+              subHtml: `<div class="lg-sub-html"><h4>Tình yêu không làm cho thế giới quay tròn. Tình yêu là những gì làm cho chuyến đi đáng giá</h4></div>`,
+            });
+          </script>
+
+          <div
+            class="col-md-4 col-sm-6 col-xs-6 mix grid-item btn-see-more-gallery"
+            data-index="3"
+          >
+            <div class="item">
+              <a href="javscript:void(0)">
+                <img src="./images/together.webp" alt="" />
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Tình yêu không có rào cản. Nó nhảy rào, nhảy rào, xuyên tường để đến đích với đầy hy vọng
+Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia
+Tình yêu đích thực đứng về phía nhau trong những ngày tốt đẹp và sát cánh hơn trong những ngày tồi tệ
+Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí
+Đối với thế giới, bạn có thể là một người, nhưng với một người, bạn là cả thế giới
+Tôi yêu bạn vì tất cả những gì bạn đang có, tất cả những gì bạn đã có, và tất cả những gì bạn chưa hiện hữu
+Bước đi với bàn tay của bạn trong tay tôi và bàn tay của tôi trong tay bạn, đó chính xác là nơi tôi muốn luôn ở đó -->
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="footer-widgets"
+      style="
+        background-image: url(./images/slide-ex.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+        width: 100%;
+      "
+    >
+      <div class="footer-note">
+        <h1>Thank you!</h1>
+        <p>Văn Quốc &amp; Thị Hoa</p>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-sm-offset-3">
+              <p class="para">Forever And Always Our Love</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="menu-access" class="">
+      <div class="btn-floating-disc animate-disc"></div>
+    </div>
+
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake" style="font-size: 15px">🌸</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake" style="font-size: 10px">♥️</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake" style="font-size: 16px">♥️</div>
+        <div class="snowflake" style="font-size: 22px">🌸</div>
+        <div class="snowflake" style="font-size: 18px">♥️</div>
+        <div class="snowflake" style="font-size: 20px">🌸</div>
+        <div class="snowflake" style="font-size: 16px">♥️</div>
+        <div class="snowflake" style="font-size: 20px">🌸</div>
+      </div>
+    </div>
+    <script src="./js/libs/jquery-plugin-collection.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/libs/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@6/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.0.4/jquery.countdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js"></script> -->
   </body>
 </html>
