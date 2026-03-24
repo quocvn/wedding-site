@@ -614,39 +614,44 @@ flyingPages();
     }
   }
 
+  const bgMusic = $("#bg-music")[0];
+  let hasInteracted = false;
+  // Toggle play/pause
+  function toggleMusic() {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    } else {
+      bgMusic.pause();
+    }
+  }
+
+  $(bgMusic).on("play", function () {
+    $(".animate-disc").css("animation-play-state", "running");
+    setTimeout(() => {
+      hasInteracted = false;
+    }, 800);
+  });
+
+  $(bgMusic).on("pause", function () {
+    $(".animate-disc").css("animation-play-state", "paused");
+  });
+
+  $(".btn-floating-disc").on("click", function () {
+    if (hasInteracted) return;
+    toggleMusic();
+  });
+
+  // Auto play ONLY if user has interacted with the page and music is paused
+  $(document.body).one("pointerdown", function () {
+    if (!hasInteracted && bgMusic.paused) {
+      hasInteracted = true;
+      bgMusic.play().catch(() => {});
+    }
+  });
+
   /*------------------------------------------
     = MENU ACCESSIBILITY
     -------------------------------------------*/
-  let isPlaying = false;
-  let hasStarted = false;
-  let audio = new Audio("../audio/50_year.mp3");
-  function playMusic() {
-    if (!hasStarted) {
-      audio
-        .play()
-        .then(() => {
-          isPlaying = true;
-          hasStarted = true;
-          $(".animate-disc").css("animation-play-state", "running");
-        })
-        .catch((error) => {
-          console.error("Error playing music:", error);
-        });
-      return;
-    }
-    if (isPlaying) {
-      audio.pause();
-      $(".animate-disc").css("animation-play-state", "paused");
-    } else {
-      audio.play();
-      $(".animate-disc").css("animation-play-state", "running");
-    }
-    isPlaying = !isPlaying;
-  }
-
-  $(".btn-floating-disc").click(function () {
-    playMusic();
-  });
   // $(window).on("load", function () {
   //   if ($(".bii-logo").length > 0) {
   //     $("#menu-access").css("bottom", "278px");
@@ -757,6 +762,4 @@ flyingPages();
       setAutoHeightEventImage();
     })
     .resize();
-
-  $(document.body).one("pointerdown", playMusic);
 })(jQuery);
