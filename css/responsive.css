@@ -260,6 +260,10 @@
     font-size: 375px;
   }
 
+  .text-date p span {
+    font-size: 24px;
+  }
+
   .section-title p {
     font-size: 13px;
     margin: 15px auto 40px;
