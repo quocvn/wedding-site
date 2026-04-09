@@ -631,6 +631,7 @@ flyingPages();
   }
 
   $(bgMusic).on("play", function () {
+    $("#audio-wave-id").addClass("audio-wave");
     $(".animate-disc").css("animation-play-state", "running");
     setTimeout(() => {
       musicStarted = false;
@@ -638,6 +639,7 @@ flyingPages();
   });
 
   $(bgMusic).on("pause", function () {
+    $("#audio-wave-id").removeClass("audio-wave");
     $(".animate-disc").css("animation-play-state", "paused");
   });
 
