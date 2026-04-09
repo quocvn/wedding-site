@@ -615,11 +615,16 @@ flyingPages();
   }
 
   const bgMusic = $("#bg-music")[0];
-  let hasInteracted = false;
+  let musicStarted = false;
+
   // Toggle play/pause
   function toggleMusic() {
     if (bgMusic.paused) {
-      bgMusic.play();
+      // Unmute when user explicitly plays
+      bgMusic.muted = false;
+      bgMusic.play().catch((error) => {
+        console.error("Error playing music:", error);
+      });
     } else {
       bgMusic.pause();
     }
@@ -628,7 +633,7 @@ flyingPages();
   $(bgMusic).on("play", function () {
     $(".animate-disc").css("animation-play-state", "running");
     setTimeout(() => {
-      hasInteracted = false;
+      musicStarted = false;
     }, 800);
   });
 
@@ -636,18 +641,26 @@ flyingPages();
     $(".animate-disc").css("animation-play-state", "paused");
   });
 
-  $(".btn-floating-disc").on("click", function () {
-    if (hasInteracted) return;
+  // Start music on user click of button
+  $(".btn-floating-disc").on("click", function (e) {
+    e.preventDefault();
+    if (musicStarted) return;
     toggleMusic();
   });
 
-  // Auto play ONLY if user has interacted with the page and music is paused
-  $(document.body).one("pointerdown", function () {
-    if (!hasInteracted && bgMusic.paused) {
-      hasInteracted = true;
-      bgMusic.play().catch(() => {});
-    }
-  });
+  // Auto-start muted music on first user interaction
+  document.addEventListener(
+    "click",
+    function initMusic() {
+      if (!musicStarted && bgMusic.paused) {
+        musicStarted = true;
+        bgMusic.muted = false;
+        bgMusic.play().catch(() => {});
+      }
+      document.removeEventListener("click", initMusic);
+    },
+    true,
+  );
 
   /*------------------------------------------
     = MENU ACCESSIBILITY
